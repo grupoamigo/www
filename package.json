@@ -1,0 +1,22 @@
+{
+  "name": "grupoamigo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosepp/grupoamigo.git"
+  },
+  "author": "Carlos Perezpriego <carlosepp@gmail.com> (http://perezpriego.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlosepp/grupoamigo/issues"
+  },
+  "homepage": "https://github.com/carlosepp/grupoamigo#readme",
+  "dependencies": {
+    "webpack": "^1.13.1"
+  }
+}

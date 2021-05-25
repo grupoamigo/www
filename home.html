@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <mp-slider controls bullets show-thumbs>
+  <title>Grupo Amigo</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Nexa Light";
+      width: 100%;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-weight: normal;
+    }
+
+    h1 {
+      font-family: "Nexa Bold";
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-family: "Nexa Light";
+    }
+
+    @font-face {
+      font-family: 'Nexa Bold';
+      src: url('fonts/nexa_bold-webfont.woff2') format('woff2'),
+           url('fonts/nexa_bold-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Nexa Light';
+      src: url('fonts/nexa_light-webfont.woff2') format('woff2'),
+           url('fonts/nexa_light-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    p {
+      max-width: 700px;
+      text-align: center;
+    }
+
+    a {
+      color: #3A98D1;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-family: "Nexa Bold";
+      transition: color 300ms ease;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    a:hover {
+      color: #3AB0FF;
+    }
+
+    .left-panel {
+      max-width: 100%;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .menu {
+      text-align: right;
+      top: 0;
+      position: absolute;
+      width: 50%;
+      left: 0;
+      padding: 1rem;
+      background: #f9b400;
+      border-bottom: 7px solid #ffd800;
+    }
+
+    .menu__item {
+      font-weight: 800;
+      color: #FFF;
+      background: #000;
+      font-family: 'Nexa Bold';
+      font-size: 1.5rem;
+      padding: 3px 20px;
+      margin-right: 1rem;
+      display: inline-block;
+      -webkit-transition: background-color 300ms ease, transform 300ms ease;
+         -moz-transition: background-color 300ms ease, transform 300ms ease;
+          -ms-transition: background-color 300ms ease, transform 300ms ease;
+           -o-transition: background-color 300ms ease, transform 300ms ease;
+              transition: background-color 300ms ease, transform 300ms ease;
+    }
+
+    .menu__item:last-child {
+      margin-right: 0;
+    }
+
+    .menu__item:hover {
+      color: #FFF;
+      background: #333;
+    }
+
+    .content {
+      display: flex;
+      height: 100%;
+    }
+
+    .left-panel {
+      padding: 1rem;
+      display: block;
+    }
+
+    .left-panel * {
+      max-width: 500px;
+    }
+
+    .left-panel,
+    .right-panel {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      -webkit-justify-content: center;
+              justify-content: center;
+      -webkit-align-items: center;
+              align-items: center;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+
+    footer {
+      color: #FFF;
+      background-color: #000;
+      width: 100%;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .profile-photo {
+      display: none !important;
+    }
+
+    .map {
+      border-left: 7px solid #E79900;
+    }
+
+    .logo {
+      max-width: 50%;
+    }
+
+    @media only screen and (max-width: 800px) {
+      .left-panel,
+      .right-panel {
+        position: relative;
+        width: 100%;
+        height: auto;
+        min-height: 500px;
+      }
+
+      .menu {
+        position: relative;
+        width: 100%;
+      }
+
+      .map iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      .right-panel {
+        height: 50%;
+      }
+
+      .content {
+        display: block;
+        height: auto;
+      }
+
+      .left-panel {
+        padding: 1rem;
+      }
+
+      .right-panel {
+        border-left: 0;
+        border-top: 7px solid #FEA700;
+      }
+    }
+  </style>
+</head>
+<body>
+  <article class="menu">
+    <a class="menu__item" href="somos.pdf">Nosotros</a>
+    <a class="menu__item" href="mailto:ventas.multimodal@grupoamigo.com">Contacto</a>
+  </article>
+  <section class="content">
+    <div class="left-panel">
+      <img class="logo" src="logo.svg" alt="">
+      <h1>Soluciones Logísticas a la Medida</h1>
+      <h2>Almacenajes y Maniobras Integrales del Golfo <span>S.A. de C.V.</span></h2>
+      <a href="tel://+522299729237">+ 52-2299-729-237 al 39</a>
+      <p>A 16 Km. del puerto de Veracruz y conectividad con Kansas City Southern y Ferrosur.</p>
+    </div>
+    <div class="right-panel map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120567.55561693442!2d-96.26375431058396!3d19.206724848475336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c3411f7b49c3f7%3A0x79ffd6f55a26946b!2sAlmacenajes+Y+Maniobras+Integrales+Del+Golfo%2C+S.A.+De+C.V.!5e0!3m2!1sen!2snl!4v1466718298421" frameborder="0" style="border:0" height="100%" width="100%" allowfullscreen></iframe>
+    </div>
+  </section>
+  <footer>
+    @ Todos los derechos reservados 2016, Grupo Amigo
+  </footer>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "grupoamigo",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "Carlos Perezpriego <carlosepp@gmail.com> (http://perezpriego.com)"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/carlosepp/grupoamigo",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lazyload-image": "^2.1.0",
+    "mp-slider": "^0.1.3",
+    "bower": "*",
+    "install": "^1.0.4",
+    "parallax-element": "^1.1.1"
+  }
+}
